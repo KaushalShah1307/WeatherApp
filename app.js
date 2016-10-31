@@ -47,6 +47,10 @@ weatherApp.controller ('forecastController', ['$scope', '$resource' , 'cityServi
     
     $scope.weatherResults = $scope.weatherAPI.get({q: $scope.city, units: 'imperial' , appid: 'bec4568ec8271e015c30f35a4250b62d'});
     
-    console.log($scope.weatherResults);
+    $scope.convertToDate = function(dt){
+        
+        return new Date(dt);
+        
+    }
     
 }]);
