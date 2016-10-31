@@ -49,7 +49,7 @@ weatherApp.controller ('forecastController', ['$scope', '$resource' , 'cityServi
     
     $scope.convertToDate = function(dt){
         
-        return new Date(dt);
+        return new Date(dt * 1000);
         
     }
     
