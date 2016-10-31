@@ -2,7 +2,7 @@
 var weatherApp = angular.module('weatherApp', ['ngRoute', 'ngResource']);
 
 // Routes declaration
-weatherApp.config (function($routeProvider){
+weatherApp.config(function($routeProvider){
     
    $routeProvider
    
